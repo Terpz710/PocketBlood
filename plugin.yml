@@ -1,5 +1,5 @@
-name: Blood
+name: PocketBlood
 version: 1.0.0
 author: Terpz710
 api: 5.0.0
-main: terpz710\blood\Blood
+main: terpz710\pocketblood\PocketBlood
