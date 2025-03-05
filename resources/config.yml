@@ -1,0 +1,11 @@
+# Made by Terpz710 :p
+
+# When a player takes damage it will show blood (Redstone block particles)
+# True = Shows particle
+# False = Doesnt show particle
+blood-particles: "true"
+
+# When a player dies it will spawn a lightning bolt at the players death position
+# True = Shows effect
+# False = Doesnt show effect
+lightning-effect: "true"
