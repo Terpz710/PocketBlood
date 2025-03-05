@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace terpz710\blood;
+namespace terpz710\pocketblood;
 
 use pocketmine\plugin\PluginBase;
 
