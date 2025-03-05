@@ -21,7 +21,7 @@ class EventListener implements Listener {
     public function onHurt(EntityDamageEvent $event) : void{
         $entity = $event->getEntity();
 
-        if ($entity instanceof Player && Blood::getInstance()->isBloodParticlesEnabled()) {
+        if ($entity instanceof Player && PocketBlood::getInstance()->isBloodParticlesEnabled()) {
             $position = $entity->getPosition();
             $pos = new Position($position->getX(), $position->getY() + 0.5, $position->getZ(), $position->getWorld());
             $blood = new BlockBreakParticle(VanillaBlocks::REDSTONE());
@@ -31,8 +31,8 @@ class EventListener implements Listener {
     }
 
     public function onDeath(PlayerDeathEvent $event) : void{
-        if (Blood::getInstance()->isLightningEffectEnabled()) {
-            Blood::getInstance()->sendLightning($event->getPlayer());
+        if (PocketBlood::getInstance()->isLightningEffectEnabled()) {
+            PocketBlood::getInstance()->sendLightning($event->getPlayer());
         }
     }
 }
