@@ -18,7 +18,7 @@ use pocketmine\network\mcpe\protocol\PlaySoundPacket;
 use pocketmine\network\mcpe\protocol\types\entity\EntityIds;
 use pocketmine\network\mcpe\protocol\types\entity\PropertySyncData;
 
-final class Blood extends PluginBase {
+final class PocketBlood extends PluginBase {
 
     protected static self $instance;
 
